@@ -1,16 +1,18 @@
-# React + Vite
+# Mohamed Nabil | Digital Architect Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, visually stunning digital portfolio built for Mohamed Nabil, a former Civil Engineer transitioned to a Front End Web Developer.
 
-Currently, two official plugins are available:
+This repository features the "Digital Architect" design system, which focuses on modern, structural aesthetics utilizing deep charcoals and vibrant cyans specifically tailored for an immersive user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
+- **Semantic Components:** Fully modular React layout separated into clean `.jsx` components (Header, Hero, Services, About, Work, Contact).
+- **Responsive Navigation:** Interactive top bar with smart state highlighting and a dynamic, animated mobile dropdown.
+- **Smooth Animations:** Fluid CSS transitions, hover-scaling interactions, and opacity adjustments powered natively by Tailwind utilities. 
+- **Glassmorphism Base:** Elegant semi-transparent UI layers spanning over a high-contrast dark environment (`#131313`).
 
-## React Compiler
+## 🛠️ Technology Stack
+- **Framework:** React 19 + Vite
+- **Styling:** Tailwind CSS
+- **Icons:** React Icons (`react-icons/fa6`) and Google Material Symbols
+- **Typography:** Inter (Body) & Space Grotesk (Labels)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
