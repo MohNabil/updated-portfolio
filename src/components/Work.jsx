@@ -2,7 +2,7 @@ export default function Work() {
   return (
     <section className="py-32 px-8 bg-surface-container-lowest" id="work">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-6">
           <div>
             <h2 className="font-label text-primary tracking-widest uppercase mb-4">
               Portfolio
