@@ -5,10 +5,11 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
           <div className="relative">
             <div className="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden">
-              <img 
-                alt="My Photo" 
-                className="w-full h-full object-cover opacity-60 hover:opacity-100 hover:scale-105 transition-all duration-1000" 
+              <img
+                alt="My Photo"
+                className="w-full h-full object-cover opacity-40 hover:scale-110 transition-transform duration-1000"
                 src="/images/photo2.jpeg"
+                loading="lazy"
               />
             </div>
             <div className="absolute -bottom-10 -right-10 bg-surface-container-highest p-8 rounded-xl shadow-2xl max-w-xs border border-outline-variant/10">

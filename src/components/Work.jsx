@@ -22,13 +22,14 @@ export default function Work() {
                 alt="Admin Dashboard"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60 group-hover:opacity-80"
                 src="/images/fix-image.png"
+                loading="lazy"
               />
             </div>
-            <div className="p-8">
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent flex flex-col justify-end p-12">
               <span className="text-primary font-label text-sm uppercase tracking-widest mb-2">
                 Web Application
               </span>
-              <h4 className="text-2xl font-headline font-extrabold mb-4">
+              <h4 className="text-4xl font-headline font-extrabold mb-4">
                 Admin Dashboard for mobile app
               </h4>
               <p className="text-on-surface-variant max-w-lg mb-6">
@@ -51,6 +52,7 @@ export default function Work() {
                 alt="Whatsapp Clone"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-70"
                 src="/images/whatsapp.png"
+                loading="lazy"
               />
             </div>
             <div className="p-8">
@@ -71,6 +73,7 @@ export default function Work() {
                 alt="Mobile App"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-70"
                 src="/images/mobile.png"
+                loading="lazy"
               />
             </div>
             <div className="p-8">

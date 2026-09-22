@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center pt-20 px-8 max-w-7xl mx-auto" id="home">
+    <section className="min-h-screen flex items-center pt-20 px-8 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center w-full">
         <div className="md:col-span-7 space-y-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/20">
@@ -14,20 +14,27 @@ export default function Hero() {
             Crafting high-performance, visually stunning digital experiences with structural precision and editorial flair.
           </p>
           <div className="flex gap-4">
-            <button className="hero-gradient text-on-primary px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-primary/20" onClick={() => document.getElementById('work').scrollIntoView()}>
+            <a
+              className="hero-gradient text-on-primary px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-primary/20"
+              href="#work"
+            >
               View Projects
-            </button>
-            <button className="border border-outline-variant px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-high transition-all" onClick={() => document.getElementById('contact').scrollIntoView()}>
+            </a>
+            <a
+              className="border border-outline-variant px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-high transition-all"
+              href="#contact"
+            >
               Let's Talk
-            </button>
+            </a>
           </div>
         </div>
         <div className="md:col-span-5 relative">
           <div className="aspect-square rounded-2xl overflow-hidden bg-surface-container-low border-8 border-surface-container-high relative z-10">
-            <img 
-              alt="Mohamed Nabil Portrait" 
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
+            <img
+              alt="Mohamed Nabil Portrait"
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               src="/images/my-photo.png"
+              loading="eager"
             />
           </div>
           <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>

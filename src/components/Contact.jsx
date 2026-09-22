@@ -31,7 +31,7 @@ export default function Contact() {
                 href="https://github.com/MohNabil"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="GitHub"
+                aria-label="GitHub"
               >
                 <FaGithub className="text-xl" />
               </a>
@@ -40,7 +40,7 @@ export default function Contact() {
                 href="https://linkedin.com/in/MohNabil-FEND"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="LinkedIn"
+                aria-label="LinkedIn"
               >
                 <FaLinkedinIn className="text-xl" />
               </a>
@@ -49,7 +49,7 @@ export default function Contact() {
                 href="https://twitter.com/MohNabil421978"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Twitter"
+                aria-label="Twitter"
               >
                 <FaXTwitter className="text-xl" />
               </a>
