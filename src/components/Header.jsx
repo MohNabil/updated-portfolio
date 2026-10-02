@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [pastHero, setPastHero] = useState(false);
 
   const navLinks = [
     { id: 'about', label: 'About', href: '#about' },
@@ -9,6 +10,17 @@ export default function Header() {
     { id: 'work', label: 'Work', href: '#work' },
     { id: 'contact', label: 'Contact', href: '#contact' },
   ];
+
+  useEffect(() => {
+    const hero = document.getElementById('home');
+    if (!hero) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setPastHero(!entry.isIntersecting),
+      { threshold: 0 }
+    );
+    observer.observe(hero);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const handleEsc = (e) => {
@@ -30,7 +42,14 @@ export default function Header() {
         <div className="text-xl font-black tracking-tighter text-neutral-100">
           <span className="text-primary">M</span>N
         </div>
-        <div className="hidden md:flex items-center gap-8">
+        <div
+          className={`hidden md:flex items-center gap-8 transition-all duration-300 ${
+            pastHero
+              ? 'opacity-100 translate-y-0 pointer-events-auto'
+              : 'opacity-0 -translate-y-2 pointer-events-none'
+          }`}
+          aria-hidden={!pastHero}
+        >
           {navLinks.map((link) => (
             <a
               key={link.id}
@@ -40,12 +59,6 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          <a
-            className="hero-gradient text-on-primary px-6 py-2 rounded-md font-bold hover:scale-105 transition-transform duration-300 active:scale-95"
-            href="#"
-          >
-            Resume
-          </a>
         </div>
         <button
           className="md:hidden text-primary"
@@ -72,12 +85,6 @@ export default function Header() {
             {link.label}
           </a>
         ))}
-        <a
-          className="hero-gradient text-on-primary px-8 py-3 mt-2 rounded-md font-bold w-11/12 text-center"
-          href="#"
-        >
-          Resume
-        </a>
       </div>
     </nav>
   );
